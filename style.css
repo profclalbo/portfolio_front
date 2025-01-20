@@ -46,24 +46,31 @@ body {
 }
 
 .botoes {
-    margin-top: 20px;
+    display: flex; /* Alinha os botões horizontalmente */
+    justify-content: center; /* Centraliza os botões no contêiner */
+    gap: 80px; /* Espaço entre os botões */
+    margin-top: 20px; /* Espaço acima dos botões */
 }
 
 .botao {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #22D4FD;
+    background-color: #22D4FD; /* Cor do botão */
     color: #000000;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
-    margin-right: 10px;
     text-align: center;
     transition: background-color 0.3s;
+    width: 150px; /* Define uma largura fixa */
 }
 
 .botao:hover {
-    background-color: #1bb2d8;
+    background-color: #1bb2d8; /* Um tom mais escuro no hover */
+}
+
+.botao:hover {
+    background-color: #1bd841;
 }
 
 .apresentacao__imagem img {
