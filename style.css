@@ -72,3 +72,43 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     border: 2px solid #22D4FD;
 }
+
+@media (max-width: 768px) {
+    /* Ajuste o layout para telas menores que 768px de largura (tablets e celulares) */
+    .apresentacao {
+        flex-direction: column; /* Empilha os elementos em vez de alinhá-los lado a lado */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .apresentacao__conteudo {
+        width: 90%; /* Usa quase toda a largura da tela */
+        margin-bottom: 20px; /* Adiciona espaço entre o texto e a imagem */
+    }
+
+    .apresentacao__imagem img {
+        width: 80%; /* Reduz o tamanho da imagem */
+        max-width: 300px; /* Limita o tamanho máximo da imagem */
+        margin: 0 auto; /* Centraliza a imagem */
+    }
+
+    .botao {
+        width: 100%; /* Botões ocupam toda a largura */
+        margin-bottom: 10px; /* Espaço entre os botões */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajuste específico para smartphones menores que 480px */
+    .apresentacao__conteudo__titulo {
+        font-size: 24px; /* Reduz o tamanho do título */
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 16px; /* Texto menor para facilitar a leitura */
+    }
+
+    .botao {
+        padding: 10px; /* Ajusta o tamanho dos botões */
+        font-size: 14px; /* Reduz a fonte dos botões */
+    }
+}
